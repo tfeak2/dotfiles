@@ -14,6 +14,7 @@
     ".config/hypr" = { source = ./hypr; recursive = true; };
     ".config/waybar" = { source = ./waybar; recursive = true; };
     ".config/wofi" = { source = ./wofi; recursive = true; };
+    ".config/ranger" = { source = ./ranger; recursive = true; };
   };
 
   home.sessionVariables = {
@@ -50,6 +51,12 @@
 
     }];
 
+  };
+
+  programs.git = {
+    enable = true;
+    userName = "tfeak2";
+    userEmail = "tfeak2@outlook.com";
   };
 
 #  programs.firefox = {
