@@ -1,0 +1,50 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["cpu", "memory", "pulseaudio", "clock", "tray", "custom/lock", "custom/power"],
+    "hyprland/workspaces": {
+         "enable-bar-scroll": true,
+         "format": " {name} ",
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "timezone": "Australia/Brisbane",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d/%m/%Y}",
+        "format": "  {:%I:%M}",
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "default": ["", "", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "cpu": {
+      "format": "  {usage}%",
+    },
+    "memory": {
+      "format": "  {used}GiB",
+    },
+    "hyprland/window": {
+      "format": "{title}",
+      "icon": true,
+    },
+    "custom/lock": {
+        "tooltip": false,
+        "on-click": "swaylock",
+        "format": "",
+    },
+    "custom/power": {
+        "tooltip": false,
+        "on-click": "",
+        "format": "⏻"
+    },
+
+}
