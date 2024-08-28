@@ -22,8 +22,7 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   #enviroment settings
-  services.displayManager.sddm = { enable = true; catppuccin.enable = true; };
-  services.desktopManager.plasma6.enable = true;
+  services.displayManager.sddm = { enable = true; catppuccin.enable = true; package = pkgs.kdePackages.sddm; };
 
   programs.hyprland = {
     enable = true;

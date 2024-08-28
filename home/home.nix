@@ -18,8 +18,10 @@
   };
 
   home.sessionVariables = {
-	EDITOR = "nvim";
+	  EDITOR = "nvim";
   };
+
+  catppuccin.accent = "blue";
 
   programs.zsh = {
     enable = true;
@@ -76,14 +78,14 @@
 #  };
 
 #  catppuccin.pointerCursor.enable = true;
-#  gtk = {enable = true; catppuccin.enable = true;};
-#  qt = {
-#    enable = true;
-#    style.name = "kvantum";
-#    platformTheme.name = "kvantum";
-#    style.catppuccin.enable = true;
-#    style.catppuccin.apply = true;
-#  };
+  gtk = {enable = true; catppuccin.enable = true;};
+  qt = {
+    enable = true;
+    style.name = "kvantum";
+    platformTheme.name = "kvantum";
+    style.catppuccin.enable = true;
+    style.catppuccin.apply = true;
+  };
 
   services.mako = {
     enable = true;
