@@ -59,6 +59,12 @@
     userEmail = "tfeak2@outlook.com";
   };
 
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
+    nix-direnv.enable = true;
+  };
+
 #  programs.firefox = {
 #    enable = true;
 #    profiles.main = {
