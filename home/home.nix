@@ -82,7 +82,7 @@
     enable = true;
     catppuccin.enable = true;
     borderRadius = 10;
-    borderSize = 3;
+    borderSize = 2;
     width = 400;
     height = 150;
   };
