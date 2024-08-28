@@ -27,6 +27,7 @@
     autosuggestion.enable = true;
     shellAliases = {
       flake = "sudo nixos-rebuild switch --flake";
+      nix-shell = "nix-shell --run zsh";
     };
 
   };
