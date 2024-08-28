@@ -20,18 +20,6 @@
       home-manager
       libsForQt5.qt5.qtwayland
 
-      #python
-      (python3.withPackages (ps: with ps; [ 
-        numpy
-        matplotlib
-        scipy
-        pyqt5
-        liblo
-        pyliblo
-        pyxdg
-        jedi
-      ]))
-
       #wayland
       mako
       libnotify
