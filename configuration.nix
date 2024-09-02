@@ -24,6 +24,11 @@
   #enviroment settings
   services.displayManager.sddm = { enable = true; catppuccin.enable = true; package = pkgs.kdePackages.sddm; };
 
+  programs.ssh = {
+    enableAskPassword = true;
+    askPassword = "${pkgs.libsForQt5.ksshaskpass}/bin/ksshaskpass";
+  };
+
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -39,6 +44,7 @@
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
     useGlobalPkgs = true;
+    backupFileExtension = "bak";
     users.tfeak2 = {
       imports = [ inputs.catppuccin.homeManagerModules.catppuccin inputs.nixvim.homeManagerModules.nixvim inputs.spicetify.homeManagerModules.default ./home/home.nix ];
     };

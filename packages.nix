@@ -18,6 +18,8 @@
       ripgrep
       nodejs
       home-manager
+      libsForQt5.kwallet
+      libsForQt5.ksshaskpass
       libsForQt5.qt5.qtwayland
 
       #wayland

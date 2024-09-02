@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ lib, pkgs, ... }:
 
 {
   imports = [ ./neovim.nix ./spotify.nix ];
@@ -19,6 +19,8 @@
 
   home.sessionVariables = {
 	  EDITOR = "nvim";
+    SSH_ASKPASS = "${pkgs.libsForQt5.ksshaskpass}/bin/ksshaskpass";
+    GIT_ASKPASS = "${pkgs.libsForQt5.ksshaskpass}/bin/ksshaskpass";
   };
 
   catppuccin.accent = "blue";
