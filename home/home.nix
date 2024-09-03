@@ -96,6 +96,7 @@
     borderSize = 2;
     width = 400;
     height = 150;
+    defaultTimeout = 3500;
   };
 
   programs.kitty = {
