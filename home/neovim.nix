@@ -17,6 +17,8 @@
       softtabstop = 2;
       shiftwidth = 2;
       termguicolors = true;
+      autoindent = true;
+      smartindent = true;
     };
 
     keymaps = [
@@ -59,6 +61,13 @@
       nvim-colorizer.enable = true;
       neocord.enable = true;
       fidget.enable = true;
+      indent-blankline = {
+        enable = true;
+        settings.scope = {
+          show_start = false;
+          show_end = false;
+        };
+      };
 
       lsp = {
         enable = true;
