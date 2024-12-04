@@ -14,7 +14,7 @@
     system = "x86_64-linux";
     nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
-      modules = [./configuration.nix ./hardware/pc.nix ./device/nvidia.nix ./device/general.nix ./device/audio.nix ./device/pc.nix];
+      modules = [./configuration.nix ./hardware/pc.nix ./device/nvidia.nix ./device/general.nix ./device/audio.nix ./device/pc.nix ./modules/games.nix ];
     };
     nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
