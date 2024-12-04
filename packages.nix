@@ -10,6 +10,7 @@
       cava
       lazygit
       zsh
+      unzip
       kitty
       ranger
       catppuccinifier-cli
@@ -18,6 +19,9 @@
       ripgrep
       nodejs
       home-manager
+      texliveFull
+
+
       libsForQt5.kwallet
       libsForQt5.ksshaskpass
       libsForQt5.qt5.qtwayland
@@ -31,10 +35,12 @@
       swaylock
       pavucontrol
       networkmanagerapplet
+      hyprshot
 
       #guis
       vesktop
       firefox
+      ungoogled-chromium
       vscodium
       gimp
       spotify
@@ -43,5 +49,9 @@
       imv
       obsidian
       stremio
+
+      # arduino
+      arduino-ide
+      arduino-cli
     ];
   }

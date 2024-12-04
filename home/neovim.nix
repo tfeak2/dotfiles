@@ -60,6 +60,7 @@
 
       nvim-colorizer.enable = true;
       neocord.enable = true;
+      vimtex.enable = true;
       fidget.enable = true;
       indent-blankline = {
         enable = true;
@@ -82,6 +83,9 @@
           lua-ls.enable = true;
           pyright.enable = true;
           nil-ls.enable = true;
+
+          ltex.enable = true;
+          texlab.enable = true;
         };
       };
 
