@@ -9,6 +9,7 @@
     mangohud
     protonup
     lutris
+    prismlauncher
   ];
   environment.sessionVariables.STEAM_EXTRA_COMPAT_TOOLS_PATH = "~/.steam/root/compatibilitytools.d";
 }
